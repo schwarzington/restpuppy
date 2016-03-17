@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.solr:solr-solrj:5.4.1'
+    compile 'org.slf4j:slf4j-simple:1.7.7'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
+  	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+  	compile 'org.springframework:spring-context:4.2.5.RELEASE'
+  	compile 'org.springframework:spring-web:4.2.5.RELEASE'
+  	compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
+  	compile 'org.springframework:spring-aop:4.2.5.RELEASE'
+}
+
+war {
+    webInf { from 'classes/WEB-INF' } // adds a file-set to the WEB-INF dir.
+}
