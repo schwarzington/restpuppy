@@ -7,7 +7,7 @@
 
     <servlet-mapping>
         <servlet-name>puppy</servlet-name>
-        <url-pattern>/puppy/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
 </web-app>

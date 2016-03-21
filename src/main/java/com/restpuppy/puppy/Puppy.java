@@ -25,6 +25,17 @@ public class Puppy {
 		this.breed = pBreed;
 	}
 	
+	public Puppy(String pName, boolean pGender, int pAge, String[] pBreed) {
+		this.gender = "Female";
+		if(pGender){
+			this.gender = "Male";
+		}
+		this.name = pName;
+		
+		this.age = pAge;
+		this.breed = pBreed;
+	}
+	
 	public String getShelter() {
 		return shelter;
 	}
